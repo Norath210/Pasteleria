@@ -23,10 +23,15 @@ public class Pasteleria {
     public static final int PESO_MAX = 1000;
     Queue<Tarta> cinta;
     List<Tarta> tartas;
+    Integer comidasTotal;
+    Integer producidasTotal;
 
     public Pasteleria() {
         cinta = new LinkedList<>();
         tartas = new ArrayList();
+        comidasTotal = 0;
+        producidasTotal = 0;
+        
     }
 
     public Queue<Tarta> getCinta() {
@@ -36,7 +41,12 @@ public class Pasteleria {
     public List<Tarta> getTartas() {
         return tartas;
     }
-    
-    
-    
+
+    public Integer getComidasTotal() {
+        return comidasTotal;
+    }
+
+    public Integer getProducidasTotal() {
+        return producidasTotal;
+    }
 }
